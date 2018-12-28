@@ -34,7 +34,7 @@ export default class AddData extends Component {
     if (addName && addCost && imageURL !== "") {
       viewData.set({
         name: addName,
-        cost: formatNumber(addCost),
+        cost: formatNumber(addCost),  //format lại dạng số
         image: imageURL,
       })
       if (!alert("Thêm thành công!")) {
